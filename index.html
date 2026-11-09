@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Controle de Investimentos</title>
+  <style>
+    :root { --bg:#ffffff; --fg:#1b1b1f; --muted:#6b6b76; --accent:#0a7d4f; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg:#121214; --fg:#ececf1; --muted:#9a9aa6; --accent:#3ecf8e; }
+    }
+    body { margin:0; min-height:100vh; display:grid; place-items:center;
+           background:var(--bg); color:var(--fg);
+           font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+    main { padding:24px; text-align:center; max-width:28rem; }
+    h1 { margin:0 0 .5rem; color:var(--accent); font-size:1.6rem; }
+    p { margin:.25rem 0; color:var(--muted); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Olá, mundo!</h1>
+    <p>Etapa 1.0: a publicação no GitHub Pages está funcionando.</p>
+    <p id="tela"></p>
+  </main>
+  <script>
+    document.getElementById("tela").textContent =
+      "Largura da tela: " + window.innerWidth + " px";
+  </script>
+</body>
+</html>
